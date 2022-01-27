@@ -14,7 +14,8 @@ conda env create -f environment.yml
 
 python -m ipykernel install --user --name=kpacubo
 
-# ENVIRONMENT EXPORT
+## ENVIRONMENT EXPORT
 
 Windows: conda env export --no-builds | findstr -v "prefix" > environment.yml
+
 Linux: conda env export --no-builds | grep -v "prefix" > environment.yml
